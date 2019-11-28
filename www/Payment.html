@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Payment</title>
+ <style>
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("loginbk.jpg");
+    width: 50%;
+    background-repeat: no-repeat;
+    font-family: 'Roboto Slab', sans-serif;
+   opacity: .95;
+}
+
+form {
+    width: 300px;
+    min-height: 30px;
+    height: auto;
+    border-radius: 5px;
+    margin: auto; ;
+    padding: 2%;
+    background-color: #06BFFF;
+}
+
+form .con {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+      margin: 0;
+}
+
+header {
+    margin: 2% auto 10% auto;
+    text-align: center;
+}
+
+header h2 {
+    font-size: 250%;
+    font-family: sans-serif;
+    color: white;
+}
+
+p {
+font-size: 100%;
+    font-family: sans-serif;
+    color: white;
+    }
+    
+.input-item {
+    background: white;
+    color: white;
+    border-radius: 5px;
+    width: 280px;
+    height: 50px;
+}
+
+input[class="form-input"]{
+    width: 280px;
+    height: 50px;
+    margin-top: 2%;
+    padding: 15px;
+    font-size: 16px;
+    font-family:'Roboto Slab', sans-serif;
+    color: black;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    transition: 0.2s linear; 
+}
+
+input[id="txt-input"] {
+width: 280px;
+    height: 50px;
+    }
+
+input:focus {
+    transform: translateX(-2px);
+    border-radius: 5px;
+}
+
+button {
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    font-family: 'Roboto Slab', sans-serif;
+    width: 100px;
+    height: 50px;
+    padding: 0 20px;
+    background: #21C9FF;
+    border-radius: 50px;
+    outline: none;
+    border: 3px solid white;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+}
+
+.submits {
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    width: 100px;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 50px;
+  }
+
+.sign-up {background: #21C9FF;}
+
+button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+
+button:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+
+select {
+    padding: 10px;
+    margin-right: 5px;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+
+@keyframes ani9 {
+    0% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+@media all and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+@media all and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="overlay">
+<form>
+   <div class="con">
+   <header class="head-form">
+      <h2>Payment</h2>
+      <p>Complete the payment form.</p>
+   </header>
+    
+     <br>
+   <div class="field-set">
+         <span class="input-item">
+           <i class="fa fa-user-circle"></i>
+         </span>
+         <input class="form-input" id="txt-input" type="text" placeholder="Owner" required>
+      <br><br>
+      
+      <span class="input-item">
+           <i class="fa fa-user-circle"></i>
+         </span>
+        <input class="form-input" id="txt-input" type="email" placeholder="CVV" max-length="3" required>
+      <br><br>
+      
+      <span class="input-item">
+           <i class="fa fa-user-circle"></i>
+         </span>
+        <input class="form-input" id="txt-input" type="text" placeholder="Card Number" max-length="16" required>
+      <br><br>
+      <center>
+                <select>
+                    <option value="01">January</option>
+                    <option value="02">February </option>
+                    <option value="03">March</option>
+                    <option value="04">April</option>
+                    <option value="05">May</option>
+                    <option value="06">June</option>
+                    <option value="07">July</option>
+                    <option value="08">August</option>
+                    <option value="09">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+                <select>
+                    <option value="16"> 2019</option>
+                    <option value="17"> 2020</option>
+                    <option value="18"> 2021</option>
+                    <option value="19"> 2022</option>
+                </select>
+            </div>
+            
+           <br>
+                <button type="submit" onclick="javascript:window.location='Restaurant.html';">Confirm</button>
+            </div>
+          </center>
+        </form>
+    </div>
+</div>
+
+
+<script>
+</script>
+</body>
+</html>

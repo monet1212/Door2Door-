@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.bgimg {
+  background-image: url('delivery.jpg');
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: red;
+  opacity: 0.4;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 50%;
+  background-color: black;
+}
+
+button {
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    font-family: 'Roboto Slab', sans-serif;
+    width: 100px;
+    height: 50px;
+    padding: 0 20px;
+    background: #21C9FF;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+}
+
+.sign-up {background: #21C9FF;}
+
+input {
+  width: 20%;
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+</style>
+</head>
+<body>
+
+<div class="bgimg">
+</div>
+  <div class="middle">
+    <h1  class="w3-container w3-center w3-animate-top">Door 2 Door</h1>
+    <hr>
+    <div class="box-2">
+    <p class="w3-container w3-center w3-animate-bottom">The Delivery Service of a New Generation</p>
+    
+    <center>
+    <div class="w3-container w3-center w3-animate-left">
+        <button class="log-in" onclick="javascript:window.location='Login.html';">Login</button><br>
+        <button class="btn submits sign-up" onclick="javascript:window.location='Signup.html';">Sign Up</button>
+</div>
+</div>
+
+
+
+<h5>Have you tried our website?</h5>
+<p>Use A for Yes, 1 for No.</p>
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()">Go</button>
+<p id="p01"></p>
+</div>
+</center>
+
+<script>
+function myFunction() {
+  var message, x;
+  message = document.getElementById("p01");
+  message.innerHTML = "";
+  x = document.getElementById("demo").value;
+  try {
+    if(x == "") throw "You Entered an Empty Value";
+    if(isNaN(x)) throw "Continue to Login Page.";
+    x = Number(x);
+    if(x = 1) throw "Check it out later.";
+  }
+  catch(err) {
+    message.innerHTML = "Message: " + err;
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.phonegap.example"
+    versionCode = "10"
+    version     = "1.0.0" >
+
+<!-- versionCode is optional and Android only -->
+
+  <name>Door 2 Door</name>
+
+  <description>
+      Delivery Service based in Jamaica, St. Catherine.
+  </description>
+
+  <author href="https://build.phonegap.com" email="monet18small@gmail.com">
+      Monet Small, Samoya Rainford, Abigail Dunbar.
+  </author>
+
+<platform name="android">
+  <icon background="https://image.flaticon.com/icons/svg/1585/1585622.svg" 
+        foreground="https://image.flaticon.com/icons/svg/1585/1585622.svg" />
+        </platform>
+</widget>

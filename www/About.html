@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us</title>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+  color: black;
+  font-size: 18px;
+  font-weight: 300;
+  font-family:  'Roboto Slab', sans-serif;
+  overflow: hidden;
+  
+}
+
+p {
+ line-height: 2.0;
+}
+
+.section .container {
+  padding: 30px 0 50px 0;
+}
+
+.container > h1:not(.hero) {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.container > h1:after {
+  content: "";
+  width: 30px;
+  position: relative;
+  border-bottom: 1px solid #aaa;
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}
+
+button {
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    font-family: 'Roboto Slab', sans-serif;
+    width: 100px;
+    height: 50px;
+    padding: 0 20px;
+    background: #21C9FF;
+    border-radius: 50px;
+    outline: none;
+    border: 3px solid white;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+}
+@media all and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+@media all and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
+
+</style>
+</head>
+
+<body>
+<button class="log-in"onclick="javascript:window.location='Homepage1.html';">Back</button>
+<div class="section">
+  <div class="container">
+    <h1>About Us</h1>
+<p>Door 2 Door is Jamaica’s first online Restaurant Ordering and Delivery Service. Door 2 Door was found in 2016 by Samoya Rainford, and co-founded by Monét Small and Abigail Dunbar. Our company allows customers to place orders from our mobile application on their smart phone or through a webpage on a computer. Our customer friendly and efficent staff will then dispatch these orders to an available driver. The restuarants listed on the online ordering application includes KFC, Juici Beef and Little Caesar’s just to name a few. Customers have the option to pay for their orders using Debit Cards, PayPal funds, Credit Cards (Processed by paypal) or Cash on Delivery.</p>
+
+<center>
+<button onclick="myFunction()">We Deliver!</button>
+<p id="delivery"></p>
+
+
+
+<video  width="320" height="240" controls autoplay loop>
+<source src="videoplayback.mp4" type="video/mp4">
+</video>
+
+</center>
+</div>
+</div>
+
+<script>
+function myFunction() {
+  var text;
+  var delFee = prompt("Enter your Area.");
+  switch(delFee) {
+    case "Spanish Town", "spanish town":
+      text = "We deliver at a cost of $250";
+      break;
+    case "Central Village", "central village":
+      text = "Delivery Cost is $150";
+      break;
+    case "Angels":
+      text = "$500 for Delivery";
+      break;
+      case "Portmore":
+      text = "We deliver at a cost of $300";
+      break;
+    default:
+      text = "Sorry, we are not available for delivery at that area as yet.";
+  }
+  document.getElementById("delivery").innerHTML = text;
+}
+</script>
+</body>
+</html>
